@@ -1,0 +1,8 @@
+web:
+  build: ./web
+  command: npm start
+  volumes:
+    - "./web:/usr/src/app"
+    - "/usr/src/app/node_modules"
+  ports:
+    - "3000:3000"
